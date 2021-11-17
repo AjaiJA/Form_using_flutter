@@ -174,7 +174,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           ),
                         ),
                         SizedBox(height: 30),
-                        DefaultButton(
+                        SaveButton(
                           text: "Save",
                           press: () {
                             if (_formKey.currentState!.validate()) {
@@ -304,8 +304,8 @@ class _DisplayDetailsState extends State<DisplayDetails> {
   }
 }
 
-class DefaultButton extends StatelessWidget {
-  const DefaultButton({
+class SaveButton extends StatelessWidget {
+  const SaveButton({
     Key? key,
     this.text,
     this.press,
